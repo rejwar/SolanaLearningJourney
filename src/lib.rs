@@ -512,4 +512,365 @@
 //         msg! {"Target id == system Id"}
 //     };
 //     Ok(())
+
 // }
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, AccountInfo},
+    entrypoint::{self, ProcessInstruction, ProgramResult},
+    msg,
+    pubkey::Pubkey,
+    system_program,
+};
+
+entrypoint! {
+    ProcessInstruction
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
+
+use solana_program::{
+    account_info::{next_account_info, next_account_info, AccountInfo},
+    entrypoint::{self, ProgramResult},
+    instruction::get_processed_sibling_instruction,
+    lamports, msg,
+    pubkey::Pubkey,
+    system_program,
+};
+entrypoint! {
+    processed_instruction
+}
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    _instruction_data: &[u8],
+) -> ProgramResult {
+    let account_iter = &mut accounts.iter();
+    let target_account = next_account_info(account_iter)?;
+    let account_pubkey = target_account.key;
+    let lamports = target_account.lamports();
+    let solana_balance = lamports as f64 / 1_000_000_000;
+
+    if target_account.owner == &system_program::ID {
+        msg!("Target == system")
+    };
+    Ok(())
+}
